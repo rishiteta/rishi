@@ -1,0 +1,5 @@
+f=2;
+fs=10;
+[b,a]=butter(6,2*pi*f,'s');
+[bz,az]=impinvar(b,a,fs);
+freqz(bz,az)
